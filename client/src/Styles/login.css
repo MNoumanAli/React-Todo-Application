@@ -1,0 +1,22 @@
+
+.form, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    font-size: 1.2rem;
+    color: rgb(66, 64, 64);
+    padding: 1em;
+    border: none;
+    margin: 1em;
+    background-color: salmon;
+}
+.login-btn{
+    font-size: 1rem;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    margin-top: 2em;
+}
