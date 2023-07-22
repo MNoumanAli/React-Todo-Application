@@ -1,0 +1,72 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+.welcome-bar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+.all-todo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(187, 177, 177);
+}
+.todo-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.delete-btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px ;
+}
+.add-todo{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.username{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.logout-btn{
+    padding: 0.5em 1.5em;
+    background-color: rgb(35, 16, 53);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 20%;
+    background-color: blueviolet;
+    padding: 1em;
+    font-size: 1.2em;
+    border: none;
+
+}
+.task{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80%;
+}
