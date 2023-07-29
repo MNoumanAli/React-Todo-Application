@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-// import { login } from '../API'
+import { login } from '../API'
 
 export default function Login()
 {
     let [data, changeData] = useState({email : "" , password: ""})
-    // const navigate = useNavigate()
+   
     function changeOccure(e)
     {
         changeData(d => {
@@ -17,17 +17,17 @@ export default function Login()
     }
     function loginUser(e)
     {
-        // e.preventDefault()
-        // try{
-        //     login(data)
-        //     .then(res => {
-        //         localStorage.setItem("user" , JSON.stringify(res.data))
-        //         navigate("/home")
-        //     })
-        // }catch(err)
-        // {
-        //     console.log(err)
-        // }
+        e.preventDefault()
+        try{
+            login(data)
+            .then(res => {
+                localStorage.setItem("user" , JSON.stringify(res.data))
+                navigate("/home")
+            })
+        }catch(err)
+        {
+            console.log(err)
+        }
     }
     return(
         <div className='form'>
