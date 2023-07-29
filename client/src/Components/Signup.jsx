@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-// import {  useNavigate } from 'react-router-dom'
-// import { signup } from '../API'
+import { useNavigate } from 'react-router-dom'
+import { signup } from '../API'
 
 export default function Signup()
 {
-    // const navigate = useNavigate()
+    const navigate = useNavigate();
     let [data, changeData] = useState({email : "" , password: "", username: ""})
     function changeOccure(e)
     {
@@ -19,7 +19,7 @@ export default function Signup()
     function signupUser(e)
     {
         e.preventDefault()
-        // signup(data).then(()=> navigate('/login'))
+        signup(data).then(()=> navigate('/login'))
     }
     return(
         <div className='form'>
