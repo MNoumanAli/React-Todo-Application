@@ -26,6 +26,7 @@ export default function Signup()
             <div className='title'>
                 <h2>SignUp</h2>
             </div>
+            {/* signup form */}
             <form onSubmit={signupUser}>
                 <input type="email" placeholder='Email' name='email' onChange={changeOccure}/>
                 <input type="password" placeholder= "Password" name='password' onChange={changeOccure}/>

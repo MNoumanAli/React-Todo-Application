@@ -21,6 +21,7 @@ export default function Login()
         try{
             login(data)
             .then(res => {
+                // store user data to local storage
                 localStorage.setItem("user" , JSON.stringify(res.data))
                 navigate("/home")
             })
@@ -34,6 +35,7 @@ export default function Login()
             <div className='title'>
                 <h2>Login </h2>
             </div>
+            {/* login form */}
             <form onSubmit={loginUser}>
                 <input type="email" placeholder='Email' name='email' onChange={changeOccure} className="input"/>
                 <input type="password" placeholder= "Password" name='password' onChange={changeOccure} className="input"/>
