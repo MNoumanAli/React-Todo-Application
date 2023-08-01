@@ -6,5 +6,5 @@ const userSchema = mongoose.Schema({
     username: String
 })
 
-const owner = mongoose.model('owner', userSchema)
+const owner = mongoose.model('owner', userSchema, "owner")
 export default owner

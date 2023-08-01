@@ -7,5 +7,5 @@ const schema = mongoose.Schema({
     owner : [{ type: mongoose.Schema.Types.ObjectId, ref: 'owner' }]
 })
 
-const employee = mongoose.model( 'employee' , schema)
+const employee = mongoose.model( 'employee' , schema, 'employee')
 export default employee
